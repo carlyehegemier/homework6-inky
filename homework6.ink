@@ -50,7 +50,7 @@ All done! Great job! What do you want to do next?
 
 = random
 Let's see what you get!? 
-{~ Tacos! | Pasta! | Soup! | Fried Rice! } ->back
+{~ "Tacos!"| "Pasta!" | "Soup!" | "Fried Rice!" } ->back
 -> back 
 
 = back 
@@ -61,7 +61,7 @@ Let's see what you get!?
 
 = timer
 Let's see where the timer is! 
-{& Three!| Two!| One!| Ding!} 
+{& "Three!"| "Two!"| "One!"| "Ding!"} 
 ->timer 
 Time's up! Let's head back! 
 ->back
@@ -72,7 +72,9 @@ What are we thinking today? Are we going to go with the pre-planned menu or just
 ->wingIt 
 
 = plan 
-Speaking of plans lets add some stuff to the menu -> menu 
+    Good Idea! Let's pick something random to add to the menu: 
+    {!Side Salad| Cooked Vegetables| Fruit Salad| My favorite! Berries!}  
+    -> menu 
 
 = wingIt 
 Ok yeah let's go for it! Should we through the budget out the window too!? 
@@ -80,8 +82,10 @@ Ok yeah let's go for it! Should we through the budget out the window too!?
 * Maybe not! ->budget
 
 = noBudget
-Oh shoot! Your clients didn't appreciate you not sticking to the budget and spending all their money, so they fired you. Time to fly back home! 
-->END
+Oh shoot! Your clients didn't appreciate you not sticking to the budget and spending all their money, so they fired you. Time to go somewhere new! 
+    Let's pick randomly! 
+    - Ok lets go to! {Madrid|Paris|Rome}
+    ->END
 
 = budget 
 Good choice! Let's stick to those good choices and plan the menu! ->menu
