@@ -28,6 +28,7 @@ Time to make dinner! Tonight were gonna make Spaghetti and Meatballs! What's the
     * boil the water->dinner
     * put the pasta in->dinner
     *cook the meatballs ->dinner
+    + set a timer ->timer 
     * Done -> done
     ->done
 
@@ -37,6 +38,7 @@ For breakfast let's make Strawberry Waffles! What's the next step?
     * Start cooking the waffles ->breakfast
     * Cut up the strawberries ->breakfast
     * Make whipped cream ->breakfast
+    + set a timer ->timer 
     * Done ->done
     ->done    
 = done
@@ -57,6 +59,12 @@ Let's see what you get!?
 * To add to the menu -> add
 * To quit ->Quit 
 
+= timer
+Let's see where the timer is! 
+{& Three!| Two!| One!| Ding!} 
+->timer 
+Time's up! Let's head back! 
+->back
 == store == 
 What are we thinking today? Are we going to go with the pre-planned menu or just wing it? 
 * Planned menu ->plan
